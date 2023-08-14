@@ -2,13 +2,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="blaze demo suite">
     <test verbose="2" preserve-order="true" name="C:/Users/Louis Ebi/IdeaProjects/julytestng/src/test">
-       <classes>
-           <class name="Steps.homepage">
-               <methods>
-                   <include name="findflight"/>
-                   <include name="chooseflight"/>
-               </methods>
-           </class>
-       </classes>
+        <classes>
+            <class name="Steps.homepage">
+                <methods>
+                    <include name="findflight"/>
+                    <include name="chooseflight"/>
+                </methods>
+            </class>
+            <class name="Steps.detailpagestep">
+                <methods>
+                    <include name="detailtest"/>
+                    <include name="textcheck"/>
+                </methods>
+            </class>
+        </classes>
     </test>
 </suite>
